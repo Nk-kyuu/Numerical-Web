@@ -6,13 +6,12 @@ class OnePoint extends Component{
     getValue(){
         var equation = document.getElementById("equation").value;
         var xi = document.getElementById("Xi").value;
-        var error;
         do{
             var x=xi
             var x1 = eval(equation)
             var xi=x1
 
-        }while(error >= 0.000001 || error <= -0.0000001)
+        }while(Math.abs(((xi-x1)/xi)*100) >= 0.000001)
         var ans = xi    
         document.getElementById("showans").innerHTML=ans;
     }

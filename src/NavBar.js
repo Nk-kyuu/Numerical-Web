@@ -24,13 +24,13 @@ export const NavBar = () => {
             <NavDropdown.Item href="/Newton">Newton-raphson</NavDropdown.Item>
             <NavDropdown.Item href="/Secant">Secant</NavDropdown.Item>
           </NavDropdown>
-          <NavDropdown title="Linear Algebra" id="nav-dropdown">
+          {/* <NavDropdown title="Linear Algebra" id="nav-dropdown">
             <NavDropdown.Item href="/Cramer">Cramer's Rule</NavDropdown.Item>
             <NavDropdown.Item href="/GaussElimination">Gauss Elimination</NavDropdown.Item>
             <NavDropdown.Item href="/MatrixInversion">Matrix Inversion</NavDropdown.Item>
             <NavDropdown.Item href="/Jacobi">Jacobi</NavDropdown.Item>
             <NavDropdown.Item href="/GaussSeidel">Gauss-Seidel</NavDropdown.Item>
-          </NavDropdown>
+          </NavDropdown> */}
         </Nav>
       </Container>
     </Navbar>

@@ -8,14 +8,11 @@ class Newton extends Component{
         var derivative = document.getElementById("derivative").value;
         var x0 = document.getElementById("x").value;
         do{
-            var x=x0;
+            var x=x0
+            var x1=x0
             var fx0 = eval(equation)
             var dfx0 = eval(derivative)
-            var dx = -fx0/dfx0
-            var x1 = x0+dx
-            var x=x1
-            var fx1 = eval(equation)
-            x0 = x1
+            var x0=x-(fx0/dfx0)
         }while(Math.abs(((x0-x1)/x0)*100) >= 0.000001)
         var ans = x0    
         document.getElementById("showans").innerHTML=ans;
